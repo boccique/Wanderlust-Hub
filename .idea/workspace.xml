@@ -5,23 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a33534f2-f881-4040-97f0-91243f1ff09e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attempt/X/X/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attempt/X/X/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attempt/X/X/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attempt/X/X/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attempt/X/X/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attempt/X/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attempt/anyway/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attempt/anyway/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attempt/anyway/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attempt/anyway/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attempt/anyway/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attempt/anyway/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attempt/anyway/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attempt/anyway/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/base/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/base/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/base/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/base/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/base/templates/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/base/static/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +49,11 @@
     "ignore_missing_gitignore": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MagicBook\OneDrive\Рабочий стол\attempt\base\static" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
