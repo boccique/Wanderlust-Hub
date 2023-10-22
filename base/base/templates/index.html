@@ -11,32 +11,33 @@
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="{% static 'styles/style.css' %}">
     <title>attempt</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: #000000;
+            background-image: url("{% static 'images/mountains.jpg' %}");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
 <body>
-<style>
-    body{
-        height: 100vh;
-        background-color: #000000;
-        background-image: url("{% static 'images/mountains.jpg' %}");
-        background-size: cover;
-        background-position: center;
-    }
-</style>
 <header>
-        <div class="navbar">
-            <div class="logo">
-                <a href="#">Attempt</a></div>
-            <ul class="links">
-                <li><a href="home">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="services">Services</a></li>
-                <li><a href="contact">Contact</a></li>
-            </ul>
-            <a href="#" class="action_btn">Get Started</a>
-            <div class="toggle_btn">
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Attempt</a></div>
+        <ul class="links">
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+        <a href="#" class="action_btn">Get Started</a>
+        <div class="toggle_btn">
             <i class="fa-solid fa-bars"></i>
-            </div>
         </div>
-    </header>
+    </div>
+</header>
+
 </body>
 </html>
