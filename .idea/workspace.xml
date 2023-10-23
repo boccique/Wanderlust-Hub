@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a33534f2-f881-4040-97f0-91243f1ff09e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/base/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/base/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/base/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/base/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/base/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/base/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/base/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/base/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/base/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/base/templates/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/base/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/base/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/base/templates/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/base/templates/services.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
