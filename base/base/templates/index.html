@@ -1,9 +1,10 @@
 <!--https://dpaste.com/DNKM2DT73  how it was at the start, expired in one year, so 23.10.24-->
-
-
 {% extends 'main.html' %}
 {% load static %}
-{% block head %}
+
+
+    <!--STATIC BODY IMAGE CHANGING-->
+    {% block head %}
 <style>
     body{
         height: 100vh;
@@ -13,9 +14,11 @@
         background-position: center;
     }
 </style>
-{% endblock %}
+    {% endblock %}
 
-{% block content %}
+
+    <!--SELECTION FOR INDEX PAGE HERE-->
+    {% block content %}
 <main>
     <section id="home">
         <h1>Welcome</h1>
@@ -23,10 +26,10 @@
             Reprehenderit, voluptatibus.</p>
     </section>
 </main>
-{% endblock %}
+    {% endblock %}
 
 
-{% block script %}
+    {% block script %}
 <script>
     const toggleBtn = document.querySelector('.toggle_btn')
     const toggleBtnIcon = document.querySelector('.toggle_btn i')
@@ -41,4 +44,4 @@
         : 'fa-solid fa-bars'
     }
 </script>
-{% endblock %}
+    {% endblock %}

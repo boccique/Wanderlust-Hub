@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a33534f2-f881-4040-97f0-91243f1ff09e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/base/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/base/templates/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/base/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/base/templates/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/base/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/base/templates/home.html" afterDir="false" />
@@ -21,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>

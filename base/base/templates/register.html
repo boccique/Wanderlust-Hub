@@ -1,6 +1,9 @@
 {% extends 'main.html' %}
 {% load static %}
-{% block head %}
+
+
+<!--STATIC BODY IMAGE CHANGING-->
+    {% block head %}
 <style>
     body{
         height: 100vh;
@@ -10,8 +13,11 @@
         background-position: center;
     }
 </style>
-{% endblock %}
-{% block script %}
+    {% endblock %}
+
+
+    <!--SCRIPT FOR THE BUTTONS-->
+    {% block script %}
 <script>
     const toggleBtn = document.querySelector('.toggle_btn')
     const toggleBtnIcon = document.querySelector('.toggle_btn i')
@@ -26,4 +32,16 @@
         : 'fa-solid fa-bars'
     }
 </script>
-{% endblock %}
+    {% endblock %}
+
+
+    <!--BLURED WINDOW OF REGISTRATION-->
+    {% block content %}
+<main>
+    <section id="home">
+        <h1>Welcome</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+            Reprehenderit, voluptatibus.</p>
+    </section>
+</main>
+    {% endblock %}

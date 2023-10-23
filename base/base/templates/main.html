@@ -9,9 +9,14 @@
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="{% static 'styles/style.css' %}">
     <title>WanderlustHub</title>
+
+
+    <!--STATIC BODY IMAGE CHANGING-->
     {% block head %}
 
     {% endblock %}
+
+
     <link rel="icon" href="{% static 'images/globe.svg' %}">
 </head>
 <body>
@@ -40,16 +45,21 @@
     </div>
 </header>
 
-{% block content %}
+
+    <!--SELECTION FOR INDEX PAGE HERE, TOO-->
+    <!--BLURED WINDOW OF REGISTRATION FOR REGISTRATION PAGE-->
+    {% block content %}
 <main>
 
 </main>
-{%endblock%}
+    {%endblock%}
 
-{% block script %}
 
-{% endblock %}
+    <!--SCRIPT FOR THE BUTTONS-->
+    {% block script %}
+
+    {% endblock %}
 </body>
 
 
-<!--Если ты смотришь сюда, знай, мы тебя любим!-->
+    <!--Если ты смотришь сюда, знай, мы тебя любим!-->
