@@ -47,3 +47,23 @@ navbar{
     display: flex;
     gap: 2rem;
 }
+
+
+.navbar .toggle_btn{
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color: orange;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
