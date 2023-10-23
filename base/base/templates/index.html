@@ -1,28 +1,44 @@
+<!--https://dpaste.com/DNKM2DT73  how it was at the start, expired in one year, so 23.10.24-->
+
+
 {% extends 'main.html' %}
 {% load static %}
-    {% block head %}
-        <style>
-        body{
-            height: 100vh;
-            background-color: #000000;
-            background-image: url("{% static 'images/mountains.jpg' %}");
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
-    {% endblock %}
+{% block head %}
+<style>
+    body{
+        height: 100vh;
+        background-color: #000000;
+        background-image: url("{% static 'images/mountains.jpg' %}");
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+{% endblock %}
 
 {% block content %}
 <main>
     <section id="home">
         <h1>Welcome</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
-        Reprehenderit, voluptatibus.</p>
+            Reprehenderit, voluptatibus.</p>
     </section>
 </main>
 {% endblock %}
 
 
 {% block script %}
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
 
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
 {% endblock %}
