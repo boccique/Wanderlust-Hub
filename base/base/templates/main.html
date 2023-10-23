@@ -11,15 +11,9 @@
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="{% static 'styles/style.css' %}">
     <title>WanderlustHub</title>
-    <style>
-        body{
-            height: 100vh;
-            background-color: #000000;
-            background-image: url("{% static 'images/mountains_blured.jpg' %}");
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
+    {% block head %}
+
+    {% endblock %}
     <link rel="icon" href="{% static 'images/globe.svg' %}">
 </head>
 <body>
@@ -47,12 +41,11 @@
 
     </div>
 </header>
-
+{% block content %}
 <main>
 
-
-
 </main>
+{%endblock%}
 
 <script>
     const toggleBtn = document.querySelector('.toggle_btn')
