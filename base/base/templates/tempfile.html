@@ -1,0 +1,62 @@
+<!--HERE WILL BE SETTING THE OUTPUTS FOR FORMS-->
+<!--FORMS ITSELF AND OTHER EXPERIMENT THINGS  -->
+
+
+{% extends 'main.html' %}
+{% extends 'main.html' %}
+{% load static %}
+
+
+    <!--STATIC BODY IMAGE CHANGING-->
+    {% block head %}
+<style>
+    body{
+        height: 100vh;
+        background-color: #000000;
+        background-image: url("{% static 'images/mountains.jpg' %}");
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+    {% endblock %}
+
+
+    <!--TEMPORARY OUTPUT OF THE MODELS-->
+    {% block content %}
+<main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+    {% endblock %}
+
+
+    {% block script %}
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+</script>
+    {% endblock %}
