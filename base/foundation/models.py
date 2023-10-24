@@ -9,6 +9,7 @@ class RegisteredUser(models.Model):
     lname = models.CharField(max_length=200, blank=True, null=True)
     age = models.IntegerField(blank=True, null=True)
     bio = models.TextField(max_length=10000, blank=True, null=True)
+    objects = models.Manager()
 
     def __str__(self):
         return self.username

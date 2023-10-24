@@ -1,4 +1,11 @@
 from django.shortcuts import render
+from .models import RegisteredUser
+
+
+def tempfile(request):
+    users = RegisteredUser.objects.all
+    context = {'users': users}
+    return render(request, 'tempfile.html', context)
 
 
 def index(request):
@@ -22,4 +29,6 @@ def contact(request):
 
 
 def register(request):
-    return render(request, 'register.html')
+    users = RegisteredUser.objects.all
+    context = {'users': users}
+    return render(request, 'register.html', context)
