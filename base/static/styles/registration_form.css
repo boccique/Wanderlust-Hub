@@ -1,3 +1,79 @@
-form.registration-form{
-    display: table;
+.container{
+    width: 700px;
+    height: 700px;
+    margin: 100px auto;
+}
+
+/*Glass Effect*/
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+input.email{
+    margin-left: 20%;
+    margin-top: 30%;
+    font-size: 1rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 10px 120px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+input.password{
+    margin-left: 20%;
+
+    font-size: 1rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 10px 120px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+button.submit{
+    margin-left: 30.5%;
+
+    font-size: 1rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 10px 100px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    font-family: Helvetica;
+    color: #333333a0;
+    font-weight: bold;
+    cursor: pointer;
+}
+button.submit:hover{
+        scale: 1.05;
+        color: #ffffff;
+}
+a{
+        text-decoration: none;
+
+}
+
+input::placeholder{
+    text-align: left;
+    font-family: Helvetica;
+    color: #f5f5dc45;
 }

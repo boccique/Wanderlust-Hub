@@ -13,6 +13,7 @@
         background-position: center;
     }
 </style>
+<link rel="stylesheet" href="{% static 'styles/registration_form.css' %}">
     {% endblock %}
 
 
@@ -38,8 +39,17 @@
     <!--BLURED WINDOW OF REGISTRATION-->
     {% block content %}
 <main>
-<div class="">
 
+    <div class="container glass">
+
+<form method="get" name="form" class="form">
+    <input type="email" name="email"  placeholder="e-mail" class="email"><br>
+    <input type="password" name="passwd"  placeholder="password" class="password"><br>
+    <a href="/"><button type="submit" name="submit" class="submit">Submit</button></a>
+
+</form>
 </div>
+
+
 </main>
     {% endblock %}

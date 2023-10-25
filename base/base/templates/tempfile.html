@@ -27,28 +27,29 @@
 <main>
 
     <h1 style="color: white; text-align: center">TESTING THE OUTPUT STUFF</h1>
-    <p style="color: white; text-align: left; font-size: 2rem; margin: 30px;">
-    {% for i in users %}
 
-    {{ i.fname }} {{ i.lname }}<br>
-        {{ i.bio }}
+    {% for user in users %}
+    <ol style="color: white; text-align: left; font-size: 2rem; margin: 30px;">
+    <li>{{ user.email }}</li>
+    <li>{{ user.passwd }}</li>
+        <hr>
 
-    {% endfor %}
-    </p>
+    </ol>
+        {% endfor %}
 
-    <form action="" method="get" class="registration-form">
-        <div class="registration-form">>
-            <label for="email">Enter your email: </label>
-            <input type="text" name="email" id="email" required>
-        </div>
-        <div class="registration-form">>
-            <label for="password">Enter your password: </label>
-            <input type="password" name="password" id="password">
-        </div>
-        <div class="registration-form">>
-            <input type="submit" value="submit">
-        </div>
-    </form>
+
+
+
+
+<!--<div class="container glass">-->
+
+<!--<form method="get" name="form" class="form">-->
+<!--    <input type="email" name="email"  placeholder="e-mail" class="email"><br>-->
+<!--    <input type="password" name="passwd"  placeholder="password" class="password"><br>-->
+<!--    <a href="/"><button type="submit" name="submit" class="submit">Submit</button></a>-->
+
+<!--</form>-->
+<!--</div>-->
 
 </main>
     {% endblock %}
