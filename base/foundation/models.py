@@ -13,3 +13,11 @@ class RegisteredUser(models.Model):
 
     def __str__(self):
         return self.username
+
+
+class Something(models.Model):
+    something = models.TextField(max_length=10000)
+    objects = models.Manager()
+
+    def __str__(self):
+        return self.something
