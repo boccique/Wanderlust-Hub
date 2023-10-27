@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+
+    <!--STATIC BODY IMAGE CHANGING-->
+    {% block head %}
+<style>
+    body{
+        height: 100vh;
+        background-color: #000000;
+        background-image: url("{% static 'images/darkgreen.png' %}");
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+<link rel="stylesheet" href="{% static 'styles/registration_form.css' %}">
+    {% endblock %}
+
+{% for i in sometexts %}
+{{ i }}
+{% endfor %}

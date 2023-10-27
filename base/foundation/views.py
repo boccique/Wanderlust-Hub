@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import RegisteredUser
+from .models import Something
 
 
 def tempfile(request):
@@ -32,3 +33,9 @@ def register(request):
     users = RegisteredUser.objects.all
     context = {'users': users}
     return render(request, 'register.html', context)
+
+
+def sometext(request):
+    sometexts = Something.objects.all
+    context = {'sometexts': sometexts}
+    return render(request, 'sometext.html', context)

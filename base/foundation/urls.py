@@ -9,4 +9,5 @@ urlpatterns = [
     path('contact/', views.contact, name="contact"),
     path('register/', views.register, name="register"),
     path('test/', views.tempfile, name="test"),
+    path('sometext/', views.sometext, name="sometext")
 ]
