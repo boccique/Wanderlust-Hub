@@ -51,3 +51,10 @@ def sometext(request):
     sometexts = Something.objects.all
     context = {'sometexts': sometexts}
     return render(request, 'sometext.html', context)
+
+
+def user_page(request):
+    users = RegisteredUser.objects.all
+    context = {'users': users}
+    return render(request, 'user_page.html', context)
+
