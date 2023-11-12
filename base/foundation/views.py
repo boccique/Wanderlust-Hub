@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import RegisteredUser
 from .models import Something
+from .forms import RegisteredUserForm
 
 
 def tempfile(request):
@@ -30,8 +31,12 @@ def contact(request):
 
 
 def register(request):
-    users = RegisteredUser.objects.all
-    context = {'users': users}
+    subbmited = False
+    if request.method == 'POST':
+        form = RegisteredUserForm(request.POST)
+        
+    form = RegisteredUserForm
+    context = {'form': form}
     return render(request, 'register.html', context)
 
 

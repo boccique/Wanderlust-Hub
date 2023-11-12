@@ -42,7 +42,11 @@
 
     <div class="container glass">
 
-<form method="get" name="form" class="form">
+
+<form method="POST" name="form" class="form">
+    {% csrf_token %}
+
+
     <input type="email" name="email"  placeholder="e-mail" class="email"><br>
     <input type="password" name="passwd"  placeholder="password" class="password"><br>
     <a href="/"><button type="submit" name="submit" class="submit">Submit</button></a>
