@@ -1,6 +1,8 @@
-def main():
-    pass
+from django.forms import ModelForm
+from .models import RegisteredUser
 
 
-if __name__ == '__main__':
-    main()
+class RegisteredUserForm(ModelForm):
+    class Meta:
+        model = RegisteredUser
+        fields = ('email', 'passwd')
