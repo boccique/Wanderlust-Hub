@@ -32,14 +32,18 @@ def contact(request):
 
 
 def register(request):
-    subbmited = False
+    submitted = False
     if request.method == 'POST':
         form = RegisteredUserForm(request.POST)
         if form.is_valid():
             form.save()
+            return HttpResponseRedirect('/register?submitted=True')
+    else:
+        form = RegisteredUserForm
+        if 'submitted' in request.GET:
+            submitted = True
 
-    form = RegisteredUserForm
-    context = {'form': form}
+    context = {'form': form, 'submitted': submitted}
     return render(request, 'register.html', context)
 
 

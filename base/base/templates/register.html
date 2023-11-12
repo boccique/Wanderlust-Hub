@@ -12,6 +12,13 @@
         background-size: cover;
         background-position: center;
     }
+    .reg{
+        height: 43em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
 </style>
 <link rel="stylesheet" href="{% static 'styles/registration_form.css' %}">
     {% endblock %}
@@ -41,8 +48,11 @@
 <main>
 
     <div class="container glass">
+        {% if submitted %}
 
+        <a href="/home" class="reg">YOU ARE SMART ENOUGH TO JOIN US!!!</a>
 
+        {% else %}
 <form method="POST" name="form" class="form">
     {% csrf_token %}
 
@@ -52,6 +62,7 @@
     <a href="/"><button type="submit" name="submit" class="submit">Submit</button></a>
 
 </form>
+        {% endif %}
 </div>
 
 
