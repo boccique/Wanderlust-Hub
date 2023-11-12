@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import RegisteredUser
 from .models import Something
 from .forms import RegisteredUserForm
+from django.http import HttpResponseRedirect
 
 
 def tempfile(request):
@@ -34,7 +35,9 @@ def register(request):
     subbmited = False
     if request.method == 'POST':
         form = RegisteredUserForm(request.POST)
-        
+        if form.is_valid():
+            form.save()
+
     form = RegisteredUserForm
     context = {'form': form}
     return render(request, 'register.html', context)
