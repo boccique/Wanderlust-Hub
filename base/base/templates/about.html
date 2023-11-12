@@ -4,6 +4,7 @@
 
     <!--STATIC BODY IMAGE CHANGING-->
     {% block head %}
+<link rel="stylesheet" href="{% static 'styles/placeholder.css' %}">
 <style>
     body{
         height: 100vh;
@@ -16,8 +17,9 @@
     {% endblock %}
 
 
-    <!--SCRIPT FOR THE BUTTONS-->
-    {% block script %}
+<!--SCRIPT FOR THE BUTTONS-->
+{% block script %}
+{% endblock %}
 <script>
     const toggleBtn = document.querySelector('.toggle_btn')
     const toggleBtnIcon = document.querySelector('.toggle_btn i')
@@ -27,9 +29,65 @@
         dropDownMenu.classList.toggle('open')
         const isOpen = dropDownMenu.classList.contains('open')
 
-        toggleBtnIcon.classList = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars'
+    toggleBtnIcon.classList = isOpen
+    ? 'fa-solid fa-xmark'
+    : 'fa-solid fa-bars'
     }
 </script>
-    {% endblock %}
+
+<!--BLURED WINDOW OF REGISTRATION-->
+{% block content %}
+<main>
+
+    <div class="container glass">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aliquid aspernatur beatae culpa
+            eligendi error est ex excepturi fugit, hic itaque iure magni maiores nihil nisi non officiis provident,
+            quaerat quasi qui quidem quo reiciendis sit tempora, tempore velit! Enim error labore laboriosam modi
+            veritatis. Adipisci aperiam consequuntur fugiat illum vero. Animi delectus dolorem doloribus est eveniet
+            facilis fugiat itaque, libero, neque optio repellat reprehenderit repudiandae temporibus voluptas
+            voluptatum? Animi architecto asperiores beatae deleniti, eius ipsam molestiae, quia quibusdam reprehenderit
+            suscipit veniam voluptatem voluptatum. Aliquid assumenda culpa cumque debitis eligendi error ex, fuga fugiat
+            iure natus nihil obcaecati, odit officiis omnis quos sit unde vel veritatis voluptas voluptates! Deleniti,
+            error, praesentium. Ab ad adipisci aperiam asperiores assumenda atque autem commodi consequatur culpa
+            delectus deleniti dicta doloremque dolores eius fugiat in incidunt ipsa iste itaque iure labore minima
+            necessitatibus, nihil nisi odio placeat praesentium quod quos ratione recusandae repellendus reprehenderit
+            sed soluta tempora temporibus ut voluptates! Maiores, maxime, rerum. Aliquid aspernatur dicta dolores
+            doloribus, eaque eius est eveniet impedit inventore nemo nesciunt nostrum porro veniam vitae voluptatibus?
+            Architecto beatae, dolore, eveniet, id minus modi molestias necessitatibus nisi nulla optio quas repudiandae
+            sapiente sit tempore temporibus vel voluptatibus. Cumque, dignissimos, ipsa?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolore illum molestiae odio possimus
+            quia repellat voluptates. Accusantium assumenda consequatur, ducimus exercitationem hic minima officiis quae
+            quod similique totam! Ad aliquid animi aperiam assumenda consectetur consequuntur dolorum est ipsa maiores
+            maxime minus, molestiae nostrum optio ratione, reiciendis repellat tempore voluptates? Accusamus autem,
+            blanditiis eaque eligendi inventore magni minima neque officiis
+            perspiciatis quisquam quo, quod ratione vitae. Amet facere impedit inventore nisi quaerat qui quo sequi sint
+            temporibus ullam? Autem consectetur doloribus labore necessitatibus nisi? Beatae deleniti illum inventore
+            neque unde. A eius eos ipsum iusto molestiae odio soluta ut voluptatibus. Accusantium cum dolorum inventore
+            magnam obcaecati, qui. Alias aut autem cum eius facere illum modi mollitia, neque, nihil quo quod rem
+            repudiandae sequi totam veniam. Accusantium aliquid architecto assumenda distinctio hic incidunt iusto
+            labore laboriosam laborum libero necessitatibus perferendis quaerat rem voluptate, voluptatem! Accusantium
+            aut eos magnam maiores repellat. Asperiores deleniti deserunt dolor eaque eligendi, error fugiat illo
+            impedit in natus numquam officia quos sunt. Accusamus autem consequuntur dolorum ducimus earum impedit
+            magnam, nam, nesciunt, perferendis quas quis quod quos repudiandae rerum sed similique suscipit vel
+            voluptatum. Amet beatae dignissimos, dolorem eaque excepturi facilis maiores nihil obcaecati quod. Earum,
+            hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam aspernatur aut delectus
+            dignissimos dolore, dolorum eaque inventore ipsum magni nesciunt perspiciatis possimus quis ratione repellat
+            sint sit sunt, ut vel velit! Accusamus alias animi aperiam, asperiores aspernatur consectetur deleniti
+            dicta, doloremque et fugiat impedit laborum, molestias necessitatibus nulla perspiciatis quo quod rem sed
+            sunt velit. A ab ad adipisci aspernatur aut dolore doloremque esse explicabo inventore laboriosam magni
+            modi, neque non officia rerum soluta vel vero. Autem beatae commodi consequuntur dolores, doloribus
+            exercitationem facilis iste modi nihil, nulla obcaecati possimus quasi, qui quis sint voluptates
+            voluptatibus. Ad consequuntur dicta mollitia nihil quisquam reiciendis sed temporibus ullam. A animi autem
+            consequatur consequuntur corporis cumque dolores earum eum eveniet ex illum ipsum, itaque iure magnam maxime
+            molestias mollitia necessitatibus nemo officia officiis optio possimus praesentium provident quaerat quam
+            quo quos recusandae reiciendis similique tempora tempore vel voluptates voluptatum. Accusamus enim magnam
+            nesciunt quam rem reprehenderit, sapiente vero! Alias amet architecto aspernatur atque consectetur corporis
+            ducimus ea et explicabo impedit iusto laboriosam porro, quia recusandae soluta? Accusamus adipisci
+            consectetur doloribus explicabo fugit harum illum in ipsa ipsam nam nemo nostrum quas, quod reprehenderit
+            sit ullam unde! Dignissimos fuga quos ratione reiciendis voluptas!</p>
+    </div>
+
+
+</main>
+{% endblock %}
